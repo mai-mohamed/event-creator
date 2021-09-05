@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Layouts from "./Layouts/Layouts";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { getLoginSubmittedDataAction } from "./store/Auth/actions";
+import "./App.scss";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    const userData = localStorage.getItem("userData");
+    userData && dispatch(getLoginSubmittedDataAction(userData));
+  }, []);
+  return <Layouts />;
+};
 
 export default App;

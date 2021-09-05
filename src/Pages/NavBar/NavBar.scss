@@ -1,0 +1,15 @@
+@import "./../../scss/variables";
+
+.main-layout__wrapper .bg-light {
+  background-color: $white !important;
+}
+.navbar__wrapper {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  .logo {
+    color: $primaryColor !important;
+    font-family: "Lobster", cursive;
+    font-weight: bold;
+    font-size: 30px;
+  }
+}

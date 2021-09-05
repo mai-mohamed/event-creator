@@ -1,0 +1,16 @@
+@import "./../../../scss/variables";
+
+.event-card__wrapper {
+  border-radius: 10px;
+  min-height: 550px;
+
+  .event-descreption {
+    p {
+      height: 50px;
+      overflow: hidden;
+    }
+  }
+  button {
+    border-radius: 20px;
+  }
+}

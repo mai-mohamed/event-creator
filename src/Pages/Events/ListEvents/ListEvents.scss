@@ -1,0 +1,19 @@
+@import "./../../../scss/variables";
+
+.list-events__wrapper {
+  .create-event-card {
+    border-radius: 10px;
+    height: 550px;
+    p,
+    svg {
+      color: $primaryColor;
+      text-decoration: none;
+    }
+    svg {
+      font-size: 40px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}

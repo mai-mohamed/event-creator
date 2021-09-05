@@ -1,0 +1,18 @@
+@import "./../../scss/variables";
+
+.auth-layout__wrapper {
+  height: 100vh;
+  h1 {
+    color: $lightBlack;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .view-side {
+    height: 90vh;
+    background-color: #e9eaec;
+    border-radius: 20px;
+    img {
+      border-radius: 20px;
+    }
+  }
+}

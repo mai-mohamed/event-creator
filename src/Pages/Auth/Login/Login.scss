@@ -1,0 +1,11 @@
+@import "./../../../scss/variables";
+.login__wrapper {
+  button {
+    border: unset;
+    background-color: $primaryColor;
+    color: $white;
+    img {
+      width: 20px;
+    }
+  }
+}

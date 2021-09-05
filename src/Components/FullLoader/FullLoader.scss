@@ -1,0 +1,13 @@
+.full-loader__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #615cf5a6;
+  z-index: 10;
+  .spinner-border {
+    width: 8rem;
+    height: 8rem;
+  }
+}
